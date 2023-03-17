@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "inputMsg",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "outqueue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "outputMsg",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "secondqueue",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
